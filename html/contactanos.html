@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contactanos</title>
+	<link rel="stylesheet" href="../css/1style.css">
+</head>
+<body class="grid">
+	<header class="text-center encabezado">
+		<h1><a class="logoDecoration" href="../index.html">MJ Beauty Care</a></h1>
+		<!-- imagen con link a index -->
+		<!-- inicia nav -->
+	</header>
+	<nav class="navegador">
+		<ul>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="beauty-tips.html">Beauty tips</a></li>
+		</ul>
+	</nav>
+	
+	<!-- fin nav y header-->
+
+	<main class="principal">
+
+	<h2>Mandanos un mensaje</h2>
+	<p>Completa el formulario para dejarnos tu consulta y te 
+	responderemos a la brevedad</p>
+	
+	
+		<!-- comienza el form -->
+		<section class="form">
+			<form action="datos.php" method="post">
+				<fieldset>
+				<legend>Completame!</legend>
+				
+					<fieldset>
+					<legend>Datos de contacto</legend>
+						<label for="nombre">Nombre</label>
+						<input type="text" placeholder="tu nombre" name="nombre" 
+						id="nombre">
+						<label for="apellido">Apellido</label>
+						<input type="text" placeholder="tu apellido" name="apellido"
+						id="apellido">
+						<br> <br>
+						<label for="edad">Edad</label>
+						<input type="number" placeholder="tu edad" name="edad" 
+						id="edad">
+						<label for="email">Email</label>
+						<input type="email" placeholder="tu email" name="email" 
+						id="email">
+					</fieldset>
+					<fieldset>
+					<legend>¿Sobre qué es tu consulta?</legend>
+						<label for="skincare">Skincare</label>
+						<input type="checkbox" value="skincare" name="skincare" 
+						id="skincare">
+						<label for="maquillaje">Maquillaje</label>
+						<input type="checkbox" value="maquillaje" name="maquillaje"
+						id="maquillaje">
+						<label for="consulta">Envios o compras</label>
+						<input type="checkbox" value="consulta" name="consulta"
+						id="consulta">
+						<br>
+						<label for="mensaje">Dejanos tu mensaje</label><br>
+						<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu consulta"></textarea>
+					</fieldset>
+					<br>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Cancelar">
+				</fieldset>
+			</form>
+		</section>
+	    <!-- termina el form -->
+	</main>
+	<footer class="footerForm pie">
+		<h3>Follow us!</h3>
+		<a href="https://facebook.com" target="_blank">
+			<img src="../img/icons/iconfb.png" alt="facebook">
+		</a>
+		<a href="https://instagram.com" target="_blank">
+			<img src="../img/icons/iconinsta2.png" alt="instagram">
+		</a>
+		<a href="https://twitter.com" target="_blank">
+			<img src="../img/icons/icontwitter3.png" alt="twitter">
+		</a>
+		<a href="https://youtube.com" target="_blank">
+			<img src="../img/icons/iconyt.png" alt="youtube">
+		</a>
+		<a href="https://whatsapp.com" target="_blank">
+			<img src="../img/icons/iconwsp.png" alt="whatsapp">
+		</a>
+	</footer>
+</body>
+</html>
