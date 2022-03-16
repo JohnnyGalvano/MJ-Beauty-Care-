@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%
+}
+header h1{
+	font-family: 'Overpass', sans-serif;
+	font-size: 74px;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+.logoDecoration{
+	width: 90%;
+	text-decoration: none;
+	color: #332F2F;
+	font-weight: 500;
+	font-size: 3rem;
+}
+
+h2, h3, h4{
+	color: #8F4504; 
+	font-family: 'ABeeZee', sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin: 2rem; 
+}
+body header img{
+	width: 30%
+}
+.grid{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: "header" "nav" "flyer" "princ" "pie";
+	padding: 1%;
+}
+.encabezado{
+	grid-area: header;
+}
+.navegador{
+	grid-area: nav;
+}
+.flyer{
+	grid-area: flyer;
+}
+.principal{
+	grid-area: princ;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: #F5DFCA;
+	margin: 1rem;
+	height: auto;
+	}
+.pie{
+	grid-area: pie;
+}
+
+
+body{
+	background-color: #E7E3E3;
+	padding: 1rem;
+	box-sizing: border-box;
+}	
+	
+
+section, p, article, legend{
+	color: black;
+	font-weight: 300;
+	font-size: 2rem;
+	font-family: 'ABeeZee', sans-serif;
+	line-height: 2.5rem; 
+}
+body nav{
+	background-color: rgba(213,213,225,0.8); 
+	padding: 0.2rem 0.2rem;
+	margin: 2rem 0;
+	display: inline-block;
+	width: 100%;
+	/*position: sticky;*/
+	top: 0;
+	text-align: center;
+}
+	body nav ul li{
+		list-style: none;
+		display: inline-block;
+		padding: 0.2rem 1rem;
+
+	}
+		body nav ul li a{
+			color: #8F4504;
+			text-decoration: none;
+			font-size: 2.5rem; 
+			font-weight: 600;
+			font-family: 'ABeeZee', sans-serif;
+			display: inline-block;
+			margin: 0 3rem;
+
+		}
+		body nav ul li a:hover{
+			color: black; 
+			font-weight: 400;
+		}
+
+main div p{
+	display: block;
+	text-align: center;
+	border: solid pink 2px;
+	width: 100%;
+	/*padding: 2rem;
+	margin: 2rem;*/
+}
+
+figcaption{
+	color: #8F4504; 
+	font-family: 'ABeeZee', sans-serif;
+	text-align: center;
+	font-size: 2rem;
+	margin: 2rem; 
+}		
+
+.text-center{
+	text-align: center;
+	align-content: center;
+	width: 100%;
+	height: auto;
+	margin: 4px;
+
+}
+
+.fontform{
+	font-style: italic;
+}
+
+.imgstyle{
+	width: 100%;
+}
+
+
+
+.imgPal{
+	width: 100%;
+	/*margin: 2rem;*/
+	}
+.nosotros{
+	display: inline-block;
+	text-align: center;
+	}
+.container{
+	/*display: flex;*/
+	display: inline-block;
+	/*flex-flow: row;*/
+	/*justify-content: space-around;*/
+    }
+.imgSerum{
+	width: 100%;
+	height: 30%;
+	/*margin: 2rem;*/
+	}
+.makeUp{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+}
+.product{
+	width: 24rem;
+}
+    
+
+.price{
+	color: #8F4504; 
+	font-family: 'ABeeZee', sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin: 2rem; 
+	border: none;
+}
+.footerForm{
+	display: inline-block;
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 4px;
+	text-align: center;
+	text-decoration: none;
+	/*margin: 2rem;*/
+}
+/*breack point en 768px, introduccion de cambios*/
+@media (min-width: 768px){
+	.grid{
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: "header" "nav" "flyer" "princ" "pie";
+		}
+	.logoDecoration{
+		width: 90%;
+		text-decoration: none;
+		color: #332F2F;
+		font-weight: 500;
+		font-size: 6rem;
+	}
+	.navegador{
+		position: sticky;
+	}
+	.principal{
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+		.imgPal{
+			width: 40%;
+			align-items: left;
+			margin: 1rem;
+		}
+		.imgSerum{
+			width: 40%;
+			height: auto;
+			margin: 1rem;
+		}
+		.text-center1{
+			display: flex;
+			flex-direction: row;
+
+		}
+		.text-center2{
+			display: flex;
+			flex-direction: row;
+			height: auto;
+		}
+		.footerForm{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	.makeUp{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+	}
+	.fig{
+		font-size: 3rem;
+	}
+}
+/*breack point para desktop*/
+@media (min-width: 1024px){
+	.grid{
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: "header" "nav" "flyer" "princ" "pie";
+		}
+	.logoDecoration{
+		width: 100%;
+		text-decoration: none;
+		color: #332F2F;
+		font-weight: 500;
+		font-size: 8rem;
+	}
+	.text-center1{
+		display: flex;
+		flex-direction: column;
+	}
+	.form{
+		width: 100%;
+		color: #8F4504; 
+		font-family: 'ABeeZee', sans-serif;
+	}
+	
+}
+
+
+
