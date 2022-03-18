@@ -64,7 +64,7 @@ body header img{
 
 
 body{
-	background-color: #E7E3E3;
+	background-image: linear-gradient(to top, #FFFFFF ,#E3C99F);
 	padding: 1rem;
 	box-sizing: border-box;
 }	
